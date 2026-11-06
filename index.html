@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion World 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎀 FASHION WORLD 3D</h1>
+    <p>My Little Fashion Studio</p>
+  </header>
+
+  <main>
+    <section class="game">
+      <div class="character-name" id="characterName">
+        Pink Bunny
+      </div>
+      <div id="game3d"></div>
+      <p class="hint">☝️ Chạm và kéo để xoay nhân vật</p>
+    </section>
+
+    <section class="controls">
+      <h2>💕 Chọn nhân vật</h2>
+      <div class="buttons">
+        <button onclick="changeCharacter(0)">🐰 Bunny</button>
+        <button onclick="changeCharacter(1)">🐱 Kitty</button>
+        <button onclick="changeCharacter(2)">🖤 Purple Girl</button>
+      </div>
+
+      <h2>👗 Chọn trang phục</h2>
+      <div class="buttons">
+        <button onclick="changeOutfit(0)">🎀 Hồng</button>
+        <button onclick="changeOutfit(1)">💜 Tím</button>
+        <button onclick="changeOutfit(2)">💙 Xanh</button>
+        <button onclick="changeOutfit(3)">🤍 Trắng</button>
+      </div>
+
+      <h2>✨ Phụ kiện</h2>
+      <div class="buttons">
+        <button onclick="changeAccessory(0)">🎀 Nơ</button>
+        <button onclick="changeAccessory(1)">👑 Vương miện</button>
+        <button onclick="changeAccessory(2)">🌸 Hoa</button>
+        <button onclick="changeAccessory(3)">❌ Bỏ phụ kiện</button>
+      </div>
+
+      <button class="save" onclick="savePicture()">
+        📸 Lưu ảnh nhân vật
+      </button>
+    </section>
+  </main>
+
+  <footer>Made with 💗 for Fashion Lovers</footer>
+
+  <script type="module" src="game.js"></script>
+</body>
+</html>
